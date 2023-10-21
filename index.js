@@ -17,7 +17,7 @@ app.get("/tasks", (req, res) => {
 app.post("/tasks", (req, res) => {
   const task = req.body;
   tasks.push(task);
-  res.json(task);
+  res.json(tasks);
 });
 
 app.put("/tasks/:id", (req, res) => {
